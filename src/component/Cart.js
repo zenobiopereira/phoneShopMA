@@ -11,7 +11,7 @@ class Cart extends Component {
 		this.state = {};
 	}
 	render() {
-		// console.log(this.props.cartState);
+		console.log(this.props.cartState);
 		return (
 			<Fragment>
 				<Navbar id={this.props.cartState} name="Your Cart"/>
@@ -28,13 +28,18 @@ class Cart extends Component {
 					))}
 				</div>
 				<div className="containerButton">
-				<button className="confirmButton" onClick={() => (this.props.actions.cleanCart(), window.alert('Your Purchase have been completed, Thank You'))}>
+				<button className="confirmButton" onClick={(this.props.cartState.length !== 0) 
+				? () => (this.props.actions.cleanCart(), window.alert('Your Purchase have been completed, Thank You'))
+				: () => (window.alert('Your Cart is Empty, go to shop and add something...'))}
+				>
 					PURCHASE NOW
 				</button>
-				<button className="delButton" onClick={() => (
-					window.confirm("Clean Cart?"))
+				<button className="delButton" onClick={() => (this.props.cartState.length !== 0) ?
+					((window.confirm("Clean Cart?"))
 					? this.props.actions.cleanCart()
-					: null} >
+					: null)
+					: null} 
+					>
 					CLEAR CART
 				</button>
 				</div>
