@@ -3,7 +3,7 @@
 * ### This phone shop app got a mock api which generate random numbers for its own use.
 
 ## Remember:
-### the api doesn't respond for build purpouses, just for the dev mode.
+* ### the api doesn't respond for build purpouses, just for the dev mode.
 
 
 ## How to run dev mode
