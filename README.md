@@ -1,12 +1,13 @@
 # Phone Shop App
 
-## This phone shop app got a mock api Wich generate random numbers for it onw's use
+* ### This phone shop app got a mock api which generate random numbers for its own use.
 
-### Remember: the api doesn't respond for build purpouses, just for the dev mode.
+## Remember:
+### the api doesn't respond for build purpouses, just for the dev mode.
 
 
 ## How to run dev mode
----
+
 * $ npm install
 * $ npm start
 
