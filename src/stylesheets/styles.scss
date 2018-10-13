@@ -1,35 +1,24 @@
-$button-pattern-width: 8vw;
-$button-pattern-height: 5vh;
-$item-pattern-width: 15vw;
-$item-pattern-height: 25vh;
+$button-pattern-width: 120px;
+$button-pattern-height: 31px;
 $item-svg: url(../images/iphone-black.svg);
 
-// html{
-//     width: 100%;
-//     height: 100%;
-// }
+html{
+    overflow-x: hidden;
+}
 
 ::-webkit-scrollbar { 
     display: none; 
 }
 
-::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 10px;
-}
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
-}
 
 .containerButton{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 10vh;
+    margin-top: 60px;
     button{
         border-radius: 5px 5px 5px 5px;
-        width: $button-pattern-width + 10;
+        width: $button-pattern-width + 140px;
         height: $button-pattern-height;
         color: white;
         flex: 0 1 auto;
@@ -38,23 +27,25 @@ $item-svg: url(../images/iphone-black.svg);
         }
     }
     button:first-child{
-        background-color: rgb(31, 95, 31);
+        background-color: #4caf50;
+        border: none;
         &:hover {
-            background-color: rgb(73, 190, 236);
-            box-shadow: 1px 1px rgb(73, 190, 236);
+            background-color: #2193f3;
+            box-shadow: 1px 1px #2193f3;
             border-style: solid;
-            border-color: rgb(73, 190, 236);
+            border-color: #2193f3;
             color: white;
         }
     }
     button:last-child{
         margin-left: 10px;
-        background-color: rgb(202, 61, 61);
+        background-color: rgb(255, 0, 80);
+        border: none;
         &:hover {
-            background-color: rgb(73, 190, 236);
-            box-shadow: 1px 1px rgb(73, 190, 236);
+            background-color: #2193f3;
+            box-shadow: 1px 1px #2193f3;
             border-style: solid;
-            border-color: rgb(73, 190, 236);
+            border-color: #2193f3;
             color: white;
         }
     }
@@ -64,43 +55,41 @@ $item-svg: url(../images/iphone-black.svg);
 .listItems{
     display: flex;
     flex-flow: row wrap;
-    margin-top: 5vh;
+    margin-top: 15px;
 }
 
 .imgDiv{
     display: flex;
     background-image: $item-svg;
     background-repeat: no-repeat;
-    min-width: $item-pattern-width;
-    min-height: $item-pattern-height + 30;
+    min-width: 250px;
+    min-height: 412px;
     align-items: center;
     background-position: -40px 30px;
     div{
-        padding-left: 2.5vw;
+        padding-left: 50px;
         display: flex;
         flex-flow: column wrap;
-        width: $item-pattern-width - 5;
-        height: $item-pattern-height;
+        height: 200px;
         align-items: center;
-        text-align: flex-start;
+        text-align: center;
         justify-content: center;
-        max-width: $item-pattern-width - 5;;
         button{
-            background-color: rgb(123, 209, 243);
+            background-color: #002984;
             color: white;
             text-align: center;
-            margin-bottom: 1vh;
-            border-radius: 3px;
-            width: $button-pattern-width;
+            border-radius: 8px;
+            width: $button-pattern-width + 20px;
             height:  $button-pattern-height;
+            border: none;
             &:focus {
                 outline: none;
             }
             &:hover {
-                background-color:  rgb(106, 213, 255);
-                box-shadow: 1px 1px rgb(106, 213, 255);;
+                background-color:  #2193f3;
+                box-shadow: 1px 1px #2193f3;;
                 border-style: solid;
-                border-color: rgb(106, 213, 255);
+                border-color: #2193f3;
                 color: white;
             }
         }
@@ -113,41 +102,40 @@ $item-svg: url(../images/iphone-black.svg);
     top: 0;
     width: 102%;
     height: 102%;
-    margin-top: -1.1vh;
-    margin-left: -1vw;
+    margin-top: -20px;
+    margin-left: -9px;
     display: flex;
-    flex-flow: row nowrap;
-    background-color: rgb(106, 213, 255);
+    flex-direction: row;
+    background-color: #002984;
     height: 40px;
     color: white;
     justify-content: flex-end;
-        h2 {
-            display:flex;
-            text-align: center;
-            align-self: center;
-            justify-content: center;
-            margin-right: 32vw;
-            color:black;
-        }
+    h2 {
+        display:flex;
+        margin: auto auto auto 43vw;
+        color: white;
+    }
     .homeLink{
-        border-radius: 3px;
+        border-radius: 5px;
+        border: 2px white outset;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 20px;
-        background-color:black;
-        width: 5vw;
+        background-color:transparent;
+        width: 65px;
         color: white;
         text-decoration: none;
     }
     .cartLink{
-        border-radius: 3px;
+        border-radius: 5px;
+        border: 2px white solid;
         display: flex;
-        width: 5vw;
+        width: 65px;
         margin-right: 20px;
         justify-content: center;
         align-items: center;
-        background-color: black;
+        background-color: transparent;
         color: white;
         text-decoration: none;
     }
@@ -158,20 +146,10 @@ $item-svg: url(../images/iphone-black.svg);
         background-color: red;
         color: white;
         border-radius: 100%;
-        width: 1.2vw;
-        height: 2.5vh;
-        margin-right: -8px;
-        margin-top: -1.3px;
+        width: 22px;
+        height: 20px;
+        margin-right: -15px;
+        margin-top: -0.2px;
         z-index: 1;
-    }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-    .imgDiv{
-        min-height: $item-pattern-height + 35;
-        min-width: $item-pattern-width + 3;
-        div{
-            padding-left: 55px;
-        }
     }
 }
