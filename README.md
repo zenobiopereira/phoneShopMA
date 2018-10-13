@@ -5,6 +5,7 @@
 ## Remember:
 * ### the api doesn't respond for build purpouses, just for the dev mode.
 
+* ### In case the app stops responding the browser, just clean your history from the previous one hour
 
 ## How to run dev mode
 
