@@ -1,7 +1,7 @@
 {
-  "name": "react-boilerplate-project",
+  "name": "phone-shop-mocking-api",
   "version": "1.0.0",
-  "description": "Just an updated version of my regular React boilerplate",
+  "description": "Shop Phone Number with integrated API in development mode",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
